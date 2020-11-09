@@ -30,6 +30,9 @@ namespace FirstFantasyParcial.Classes
             this.Experience = 1;
         }
 
+        
+        
+
         public int Experience { get => experience; set => experience = value; }
        
        
@@ -40,11 +43,7 @@ namespace FirstFantasyParcial.Classes
 
         public abstract String Taunt();
 
-        
-
-
-
-
+      
 
         public abstract string ShowInformation();
         

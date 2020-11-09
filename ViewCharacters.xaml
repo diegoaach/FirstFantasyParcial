@@ -10,11 +10,21 @@
 
     <Grid>
         <Label Content="View Character" FontSize="30" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top"/>
-        <Label Content="Select Character" FontSize="20" HorizontalAlignment="Left" Margin="78,126,0,0" VerticalAlignment="Top"/>
-        <ComboBox Name="cboxViewInfo" HorizontalAlignment="Left" Margin="78,0,0,0" VerticalAlignment="Center" Width="143" Height="22"/>
-        <Button Name="btnViewInfo" Content="View Character" FontSize="20" HorizontalAlignment="Left" Margin="80,246,0,0" VerticalAlignment="Top" Height="43" Width="148"/>
+        <Label Content="Select type of character" FontSize="20" HorizontalAlignment="Left" Margin="46,86,0,0" VerticalAlignment="Top"/>
+        <ComboBox Name="cboxViewInfo" HorizontalAlignment="Left" Margin="83,257,0,0" VerticalAlignment="Top" Width="143" Height="22">
+
+        </ComboBox>
+
+        <Button Name="btnViewInfo" Content="View Character" FontSize="20" HorizontalAlignment="Left" Margin="80,301,0,0" VerticalAlignment="Top" Height="43" Width="148" Click="btnViewInfo_Click"/>
         <TextBlock Name="txtCharacterInfo" HorizontalAlignment="Left" Height="244" Margin="386,100,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="215" Background="White"/>
         <Button Name="btnBack" Content="Back" FontSize="15" HorizontalAlignment="Left" Margin="51,25,0,0" VerticalAlignment="Top" Height="35" Width="50" Click="btnBack_Click"/>
+        <Button Name="btnLoadCharacter" Content="Load characters" HorizontalAlignment="Left" FontSize="20"  Margin="80,207,0,0" VerticalAlignment="Top" Width="148" Click="btnLoadCharacter_Click"/>
+        <ComboBox Name="cboxCType" HorizontalAlignment="Left" Margin="94,148,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Content="Cleric"/>
+            <ComboBoxItem Content="Fighter"/>
+            <ComboBoxItem Content="Rogue"/>
+            <ComboBoxItem Content="Wizard"/>
+        </ComboBox>
 
     </Grid>
 </Page>

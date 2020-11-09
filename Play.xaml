@@ -9,7 +9,7 @@
       Title="Play" Background="#FF84DDD9">
 
     <Grid>
-        <Button Name="btnAttack" Content="Attack your enemy" HorizontalAlignment="Left" Height="37" Margin="130,226,0,0" VerticalAlignment="Top" Width="125"/>
+        <Button Name="btnAttack" Content="Attack your enemy" HorizontalAlignment="Left" Height="37" Margin="130,226,0,0" VerticalAlignment="Top" Width="125" Click="btnAttack_Click"/>
         <ProgressBar Name="barEnemyHealth" Value="100" HorizontalAlignment="Left" Height="25" Margin="409,175,0,0" VerticalAlignment="Top" Width="230"/>
         <Label Content="Enemy's health" FontSize="20" HorizontalAlignment="Left" Margin="420,102,0,0" VerticalAlignment="Top"/>
         <Button Content="Back home" HorizontalAlignment="Left" Height="33" Margin="69,41,0,0" VerticalAlignment="Top" Width="77" Click="Button_Click"/>

@@ -25,6 +25,7 @@ namespace FirstFantasyParcial
     {
 
         List<Character> list = new List<Character>();
+        List<string> nameList = new List<string>();
 
         
 
@@ -99,8 +100,16 @@ namespace FirstFantasyParcial
             } 
             if (c != null)
             {
-                list.Add(c);
-                FileManager.AddCharacter(list);
+                
+                
+                FileManager.AddCharacter(c);
+                MessageBox.Show("Saved character");
+
+            }
+            else if (txtCharacterName.Text == "" || cboxArmor.SelectedItem == null || 
+                    cboxFirstWeapon.SelectedItem == null || cboxType.SelectedItem == null)
+            {
+                MessageBox.Show("Failed to save non existent character");
             }
 
             txtCharacterName.Text = "";

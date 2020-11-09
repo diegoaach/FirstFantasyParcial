@@ -8,14 +8,32 @@ namespace FirstFantasyParcial.Classes
     class FileManager
     {
         
-        public static void AddCharacter(List<Character> list)
+        public static void AddCharacter(Character c)
         {
             string path = @"C:\Users\Diego\Documents\UPB\II Semestre\Paradigmas de Programacion\Parcial Final Practica\FirstFantasyParcial\Characters.txt";
-            foreach (Character c in list)
-            {
-                File.AppendAllText(path, "\n\n" + string.Format("Name: {0} - Type: {1} - Armor: {2} - Weapon: {3}", c.Name, c.Type, c.Armor, c.PersonalWeapon.ShowInformation()));
-            }
+            
+            
+            File.AppendAllText(path, "\n\n" + string.Format("{0}\n{1}\n{2}\n{3}", 
+                                                            c.Name, c.Type, c.Armor, c.PersonalWeapon.ShowInformation()));
+            
             
         }
+        public static String[] ReadAllLines()
+        {
+            string path = @"C:\Users\Diego\Documents\UPB\II Semestre\Paradigmas de Programacion\Parcial Final Practica\FirstFantasyParcial\Characters.txt";
+            if (File.Exists(path))
+            {
+                string[] allLines = File.ReadAllLines(path);
+                return allLines;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        
+
+
     }
 }

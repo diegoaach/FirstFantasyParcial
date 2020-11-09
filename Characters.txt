@@ -1,23 +1,21 @@
 
 
-Name: Diego - Type: Fighter - Armor: Knight - Weapon: This is a sword with 15 points of damage
+Diego
+Fighter
+Ninja
+This is a sword with 15 points of damage
 
-Name: Targaryen - Type: Wizard - Armor: Ninja - Weapon: This is a mace with 30 points of damage
+Hector
+Rogue
+Knight
+This is a mace with 30 points of damage
 
-Name: Targaryen - Type: Wizard - Armor: Ninja - Weapon: This is a mace with 30 points of damage
+Jon
+Cleric
+Ninja
+This is an axe with 20 points of damage
 
-Name: Hector - Type: Cleric - Armor: Samurai - Weapon: This is a mace with 30 points of damage
-
-Name: Targaryen - Type: Wizard - Armor: Ninja - Weapon: This is a mace with 30 points of damage
-
-Name: Hector - Type: Cleric - Armor: Samurai - Weapon: This is a mace with 30 points of damage
-
-Name: Batman - Type: Fighter - Armor: Knight - Weapon: This is a sword with 15 points of damage
-
-Name: Targaryen - Type: Wizard - Armor: Ninja - Weapon: This is a mace with 30 points of damage
-
-Name: Hector - Type: Cleric - Armor: Samurai - Weapon: This is a mace with 30 points of damage
-
-Name: Batman - Type: Fighter - Armor: Knight - Weapon: This is a sword with 15 points of damage
-
-Name: Jaque - Type: Cleric - Armor: Knight - Weapon: This is a mace with 30 points of damage
+diego
+Fighter
+Knight
+This is a sword with 15 points of damage
