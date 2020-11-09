@@ -6,7 +6,7 @@ using FirstFantasyParcial.Classes.Equipment;
 
 namespace FirstFantasyParcial.Classes
 {
-    public abstract partial class Character : IDescribable
+    public partial class Character : IDescribable
 
     {
         private string name;
