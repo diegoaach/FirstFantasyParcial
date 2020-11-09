@@ -19,5 +19,15 @@ namespace FirstFantasyParcial.Classes
         {
             return "By the ancient gods";
         }
+
+        public override string ShowInformation()
+        {
+            string text = "Name: " + Name + "\n"
+                         + "Type: Cleric \n"
+                         + "Armor: " + Armor + "\n"
+                         + "Weapon: " + PersonalWeapon + "\n\n";
+
+            return text;
+        }
     }
 }

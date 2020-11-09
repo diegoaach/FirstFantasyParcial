@@ -15,6 +15,7 @@ using FirstFantasyParcial.Classes.Equipment;
 using FirstFantasyParcial.Interfaces;
 
 
+
 namespace FirstFantasyParcial
 {
     /// <summary>
@@ -22,6 +23,8 @@ namespace FirstFantasyParcial
     /// </summary>
     public partial class CreateCharacter : Page
     {
+
+        List<Character> list = new List<Character>();
 
         
 
@@ -40,30 +43,31 @@ namespace FirstFantasyParcial
 
         }
 
-        
-
         private void btnSaveCharacter_Click(object sender, RoutedEventArgs e)
         {
+            Character c;
             string option = cboxType.Text;
 
-            Character c;
-
-            switch (option)
+            switch(option)
             {
                 case "Cleric":
                     c = new Cleric();
+                    c.Type = "Cleric";
                     break;
 
                 case "Fighter":
                     c = new Fighter();
+                    c.Type = "Fighter";
                     break;
 
                 case "Rogue":
                     c = new Rogue();
+                    c.Type = "Rogue";
                     break;
 
                 case "Wizard":
                     c = new Wizard();
+                    c.Type = "Wizard";
                     break;
 
                 default:
@@ -71,14 +75,56 @@ namespace FirstFantasyParcial
                     MessageBox.Show("You must select a type");
                     break;
             }
+
             c.Name = txtCharacterName.Text;
-            c.Level = 1;
             c.Armor = cboxArmor.Text;
+
+            string weapon = cboxFirstWeapon.Text;
+
+            switch (weapon)
+            {
+                case "Sword":
+                    c.PersonalWeapon = new Sword(15);
+                    break;
+                case "Axe":
+                    c.PersonalWeapon = new Axe(20);
+                    break;
+                case "Mace":
+                    c.PersonalWeapon = new Mace(30);
+                    break;
+                default:
+                    c.PersonalWeapon = null;
+                    MessageBox.Show("Please select your weapon.");
+                    break;
+            } 
+            if (c != null)
+            {
+                list.Add(c);
+                FileManager.AddCharacter(list);
+            }
+
+            txtCharacterName.Text = "";
+            cboxArmor.SelectedItem = null;
+            cboxFirstWeapon.SelectedItem = null;
+            cboxType.SelectedItem = null;
+
+
+
+
+
+
+
+
+
 
 
 
         }
 
-        
+
+       
+
+
+                
     }
 }

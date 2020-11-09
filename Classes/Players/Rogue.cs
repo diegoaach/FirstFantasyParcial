@@ -11,5 +11,15 @@ namespace FirstFantasyParcial.Classes
             return "By myself";
         }
 
+        public override string ShowInformation()
+        {
+            string text = "Name: " + Name + "\n"
+                         + "Type: Rogue \n"
+                         + "Armor: " + Armor + "\n"
+                         + "Weapon: " + PersonalWeapon + "\n\n";
+
+            return text;
+        }
+
     }
 }

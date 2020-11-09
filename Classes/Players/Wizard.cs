@@ -6,19 +6,25 @@ namespace FirstFantasyParcial.Classes
 {
     public class Wizard : Character
     {
-        private int mp;
-
-        public int Mp { get => mp; set => mp = value; }
+        
 
         public override string Taunt()
         {
             return "By the master spells";
         }
 
-        public string CastSpell()
+        public override string ShowInformation()
         {
-            return "KAAAABOOM";
+            string text = "Name: " + Name + "\n"
+                         + "Type: Wizard \n"
+                         + "Armor: " + Armor + "\n"
+                         + "Weapon: " + PersonalWeapon + "\n\n";
+
+            return text;
         }
+
+
+
 
     }
 }

@@ -53,7 +53,7 @@ namespace FirstFantasyParcial {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/FirstFantasyParcial;V1.0.0.0;component/bag.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/FirstFantasyParcial;component/bag.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\Bag.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

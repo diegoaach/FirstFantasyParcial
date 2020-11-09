@@ -9,17 +9,17 @@ namespace FirstFantasyParcial.Classes
     public abstract class Weapon : Tool, IDescribable, IComparable<Weapon>
 
     {
-        public enum Guns { Sword, Axe, Mace};
+        
 
         private int damage;
-        private Guns gun;
+       
         private string name;
 
 
         public int Damage { get => damage; set => damage = value; }
         
-        public Guns Gun { get => gun; set => gun = value; }
-        public string Name { get => name; set => name = value; }
+        
+        public override string Name { get => name; set => name = value; }
 
 
 
@@ -43,6 +43,8 @@ namespace FirstFantasyParcial.Classes
             }
             return message; 
         }
+
+        public abstract override string ShowInformation();
 
 
         

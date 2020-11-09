@@ -12,8 +12,10 @@ namespace FirstFantasyParcial.Classes
         private string name;
         private int level;
         private int experience;
-        private List<Tool> bag;
+        
         private string armor;
+        private Weapon personalWeapon;
+        private string type;
 
        
 
@@ -30,28 +32,25 @@ namespace FirstFantasyParcial.Classes
 
         public int Experience { get => experience; set => experience = value; }
        
-        public List<Tool> Bag { get => bag; set => bag = value; }
+       
         public string Armor { get => armor; set => armor = value; }
+        
+        public string Type { get => type; set => type = value; }
+        public Weapon PersonalWeapon { get => personalWeapon; set => personalWeapon = value; }
 
         public abstract String Taunt();
 
-        protected Character(List<Tool> bag)
-        {
-            this.bag = bag;
-        }
+        
 
-       
 
-        public string ShowInformation()
-        {
-            string text = "This is a level " + Level + " character";
 
-            foreach(Tool t in bag)
-            {
-                text += "\n"+t.ShowInformation();
-                
-            }
-            return text;
-        }
+
+
+        public abstract string ShowInformation();
+        
+            
+
+            
+        
     }
 }
